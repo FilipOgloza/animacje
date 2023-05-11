@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            border-radius: 50%;
+            animation: animation1 1s infinite ease-in alternate;
+
+        }
+        #ground{
+            width: 500px;
+            height: 20px;
+            background-color: crimson;
+            position: absolute; 
+            top: 480px; 
+            left: 0px;
+        }
+        #szuryken{
+            top: 100px; left: 647px;
+            position: absolute;
+            fill: aqua ;
+            animation: animation2 3s infinite alternate;
+            stroke: black;
+            stroke-width: 4;
+            stroke-dasharray: 500;
+            stroke-dashoffset:500 ;
+        }
+
+        #face{
+            top: 600px;
+            position: absolute;
+        }
+        #tree{
+            top: 600px;
+            left: 600px;
+            position: absolute;
+        }
+        @keyframes animation1 {
+            0%{top: 10px; left: 200px;}
+            100%{top: 400px; left: 200px;}
+            
+        }
+        @keyframes animation2 {
+            0%{ fill: blue;stroke-dashoffset:0 ;}
+            100%{fill: gold;stroke-dashoffset:500; } 
+        
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="ground"></div>
+    <div id="circle"></div>
+    <img id="face" src="Face.gif" >
+    <img id="tree" src="Drzewo2.gif" >
+    <div id="szuryken">
+        <svg width="77.89724mm" height="92.876831mm">
+        
+            <g
+            inkscape:label="Warstwa 1"
+            inkscape:groupmode="layer"
+            id="layer1"
+            transform="translate(-66.071115,-47.516718)">
+                <path
+    
+                    d="m 107.16129,47.548386 -5.67742,23.064517 c -10.107924,12.975929 -4.21354,24.610411 0.35484,32.999997 -8.330202,5.27438 -20.170591,-1.46664 -24.838712,17.74194 l -10.645159,18.80644 19.516128,-6.38709 c 12.407958,-3.4377 19.882353,-15.25047 20.935483,-26.25806 1.16265,10.7559 6.76377,22.00618 17.3871,25.19354 l 19.51613,7.09678 -7.09678,-14.90323 c -3.55298,-13.35793 -16.33741,-18.07206 -25.54838,-22 5.7591,-11.565155 9.39797,-23.769672 1.06451,-31.580641 z"
+                    id="path8684"
+                    sodipodi:nodetypes="ccccccccccccc" />
+            </g>
+        </svg>
+    </div>
+
+    
+    
+</body>
+</html>
